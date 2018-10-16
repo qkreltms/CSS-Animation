@@ -1,0 +1,46 @@
+div {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    animation-name: square-to-circle;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 0.015, 0.295, 1.225);
+    animation-direction: alternate;
+}
+
+
+@keyframes square-to-circle {
+    0% {
+        border-radius: 0 0 0 0;
+        background-color: coral;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        border-radius: 50% 0 0 0;
+        background-color: darksalmon;
+        transform: rotate(45deg);
+    }
+
+    50% {
+        border-radius: 50% 50% 0 0;
+        background-color: indianred;
+        transform: rotate(90deg);
+    }
+
+    75% {
+        border-radius: 50% 50% 50% 0;
+        background-color: lightcoral;
+        transform: rotate(135deg);
+    }
+
+    100% {
+        border-radius: 50%;
+        background-color: darksalmon;
+        transform: rotate(180deg);
+    }
+}
